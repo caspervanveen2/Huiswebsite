@@ -22,6 +22,7 @@
     <Folder Include="homepage\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="homepage\homepage.html" />
     <Content Include="homepage\piemels.txt" />
     <Content Include="homepage\pikjes.txt" />
   </ItemGroup>
