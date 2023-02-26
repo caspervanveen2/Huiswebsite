@@ -26,6 +26,8 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="homepage\homepage.html" />
+    <Content Include="homepage\styles.css" />
+    <Content Include="huiskalender\templates\huiskalender.html" />
     <Content Include="templates\huiskalender.html" />
     <Content Include="voergenerator\ingredienten.json" />
     <Content Include="templates\voergenerator.html" />
