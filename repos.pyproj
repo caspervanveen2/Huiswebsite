@@ -21,6 +21,7 @@
   <ItemGroup>
     <Folder Include="homepage\" />
     <Folder Include="huiskalender\" />
+    <Folder Include="huiskalender\templates\" />
     <Folder Include="templates\" />
     <Folder Include="voergenerator\" />
   </ItemGroup>
