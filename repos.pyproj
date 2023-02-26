@@ -19,22 +19,18 @@
     <VisualStudioVersion Condition=" '$(VisualStudioVersion)' == '' ">10.0</VisualStudioVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Folder Include="homepage\" />
-    <Folder Include="huiskalender\" />
-    <Folder Include="huiskalender\templates\" />
     <Folder Include="templates\" />
-    <Folder Include="voergenerator\" />
+    <Folder Include="json\" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="homepage\homepage.html" />
-    <Content Include="homepage\styles.css" />
-    <Content Include="huiskalender\templates\huiskalender.html" />
+    <Content Include="templates\homepage.html" />
+    <Content Include="templates\styles.css" />
     <Content Include="templates\huiskalender.html" />
-    <Content Include="voergenerator\ingredienten.json" />
+    <Content Include="json\ingredienten.json" />
     <Content Include="templates\voergenerator.html" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="huiskalender\app.py">
+    <Compile Include="app.py">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
