@@ -1,14 +1,46 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>homepage</title>
+    <title>Buurtje U N O</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .buttons-container {
+            text-align: right;
+        }
+        button {
+            margin-left: 20px;
+            margin-right: 40px;
+            margin-top: 30px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Welcome to my pikjes.nl!</h1>
-    <p>Please choose a page to visit:</p>
-    <button onclick='https://www.pornhub.com'>Page 1</button>
-    <button onclick="window.location.href='page2.html'">Page 2</button>
-    <button onclick="window.location.href='page3.html'">Page 3</button>
-    <button onclick="window.location.href='page4.html'">Page 4</button>
+    <div class="text-header1">
+        <h1>BUURTJE U N O</h1>
+    </div>
+    <div class="text-container1">
+        <p>Voor Iedereen Wat  Wils</p>
+    </div>
+    <div class="text-container2">
+        <p>Wij zijn Buurtje UNO en wij pijpen dieren. Check onze tabjes voor alle heel nuttige functionaliteiten.</p>
+    </div>
+    <div class="buttons-container">
+        <form method="post" action="{% url 'button_clicked' %}">
+            <button type="submit" name="button" value="1">Home</button>
+            <button type="submit" name="button" value="2">Huiskalender</button>
+            <button type="submit" name="button" value="3">Schoonmaakrooster</button>
+            <button type="submit" name="button" value="4">Ganzenbord Generator</button>
+            <button type="submit" name="button" value="5">Avondeten Generator</button>
+            <button type="submit" name="button" value="6">About</button>
+        </form>
+    </div>
+    <div class="image-container1">
+        <img src="Boxes.png" alt="Green box1">
+        <img src="Boxes.png" alt="Green box2">
+        <img src="Boxes.png" alt="Green box3">
+    </div>
+
+
+
 </body>
 </html>

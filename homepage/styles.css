@@ -1,0 +1,54 @@
+@font-face {
+    font-family: 'Muli';
+    src: url('Muli/Muli-Bold.ttf') format('truetype');
+}
+
+body {
+    background-image: url('BackgroundColor2.png');
+    background-size: cover;
+    background-position: center 0px;
+    background-repeat: no-repeat;
+}
+button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    padding: 1px 20px;
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Muli';
+}
+.text-header1 {
+    float: left;
+    margin-right: 20px; /* set the margins to center the container */
+    margin-left: 100px;
+    max-width: 300px; /* set the maximum width of the container */
+    max-height: 0px;
+    margin-top: 0px;
+    font-family: 'Muli';
+    color: #27B776
+}
+.text-container1 {
+    float: left;
+    margin-right: 20px; /* set the margins to center the container */
+    margin-left: 100px;
+    max-width: 300px; /* set the maximum width of the container */
+    max-height: 10px;
+    margin-top: 200px;
+    font-family: 'Muli';
+    color: #27B776
+}
+.image-container1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+img {
+    float: left;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 550px;
+    max-width: 15%;
+    height: auto;
+    display: block;
+}
