@@ -20,11 +20,25 @@
   </PropertyGroup>
   <ItemGroup>
     <Folder Include="homepage\" />
+    <Folder Include="homepage\Muli\" />
     <Folder Include="huiskalender\" />
     <Folder Include="huiskalender\templates\" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="homepage\BackgroundColor.png" />
+    <Content Include="homepage\BackgroundColor2.png" />
+    <Content Include="homepage\Boxes.png" />
     <Content Include="homepage\homepage.html" />
+    <Content Include="homepage\Muli\Muli Italic.ttf" />
+    <Content Include="homepage\Muli\Muli Light Italic.ttf" />
+    <Content Include="homepage\Muli\Muli Light.ttf" />
+    <Content Include="homepage\Muli\Muli-Bold.ttf" />
+    <Content Include="homepage\Muli\Muli-BoldItalic.ttf" />
+    <Content Include="homepage\Muli\Muli-ExtraLight.ttf" />
+    <Content Include="homepage\Muli\Muli-ExtraLightItalic.ttf" />
+    <Content Include="homepage\Muli\Muli-Semi-BoldItalic.ttf" />
+    <Content Include="homepage\Muli\Muli-SemiBold.ttf" />
+    <Content Include="homepage\Muli\Muli.ttf" />
     <Content Include="homepage\styles.css" />
     <Content Include="huiskalender\templates\huiskalender.html" />
   </ItemGroup>
