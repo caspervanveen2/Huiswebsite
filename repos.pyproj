@@ -21,11 +21,14 @@
   <ItemGroup>
     <Folder Include="homepage\" />
     <Folder Include="huiskalender\" />
-    <Folder Include="huiskalender\templates\" />
+    <Folder Include="templates\" />
+    <Folder Include="voergenerator\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="homepage\homepage.html" />
-    <Content Include="huiskalender\templates\huiskalender.html" />
+    <Content Include="templates\huiskalender.html" />
+    <Content Include="voergenerator\ingredienten.json" />
+    <Content Include="templates\voergenerator.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="huiskalender\app.py">
