@@ -25,6 +25,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="homepage\homepage.html" />
+    <Content Include="homepage\styles.css" />
     <Content Include="huiskalender\templates\huiskalender.html" />
   </ItemGroup>
   <ItemGroup>
