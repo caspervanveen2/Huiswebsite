@@ -3,19 +3,16 @@ import calendar
 
 app = Flask(__name__)
 
-@app.route('/', methods=['GET', 'POST'])
-def mycalendar():
-    if request.method == 'POST':
-        selected_date = request.form['selected_date']
-        event = get_event(selected_date)
-    else:
-        event = ""
-    
+@app.route('/', methods=['GET'])
+def index():
+    return render_template('homepage.html')
+
+@app.route('/huiskalender', methods=['GET'])
+def huiskalender():
     year = 2023
     month = 2
     cal = calendar.monthcalendar(year, month)
-    
-    return render_template('huiskalender.html', calendar=cal, event=event)
+    return render_template('huiskalender.html', calendar=cal)
 
 def get_event(date):
     # In a real application, this function would retrieve the event
