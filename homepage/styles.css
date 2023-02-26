@@ -22,13 +22,6 @@ button {
 
 .text-header1 {
     float: left;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-right: 20px; /* set the margins to center the container */
-    margin-left: 100px;
-    max-width: 300px; /* set the maximum width of the container */
-    max-height: 30px;
-    margin-top: 80px;
     font-family: 'Muli';
     color: #27B776
 }
@@ -37,7 +30,6 @@ button {
     position: absolute;
     bottom: 600px;
     height: 100px;
-    color: #27B776;
     display: flex;
     justify-content: center;
     align-items: center;
