@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Huiskalender</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        th {
+            background-color: #ccc;
+        }
+
+        .event {
+            margin-top: 20px;
+            border: 1px solid black;
+            padding: 10px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Huiskalender</h1>
+    <form>
+        <label for="date">Select a date:</label>
+        <input type="date" id="date" name="date">
+        <input type="submit" value="Submit">
+    </form>
+    <div class="event">
+        <h2 id="event-title"></h2>
+        <p id="event-desc"></p>
+    </div>
+    <table>
+        <thead>
+            <tr>
+                <th colspan="7">{{ month_name }} {{ year }}</th>
+            </tr>
+            <tr>
+                {% for day_name in day_names %}
+                <th>{{ day_name }}</th>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for week in cal %}
+            <tr>
+                {% for day in week %}
+                {% if day != 0 %}
+                <td class="day" data-date="{{ year }}-{{ '%02d' % month }}-{{ '%02d' % day }}">{{ day }}</td>
+                {% else %}
+                <td></td>
+                {% endif %}
+                {% endfor %}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <script>
+const form = document.querySelector('form');
+form.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const date = document.querySelector('#date').value;
+            if (date) {
+                const [year, month, day] = date.split('-');
+                const dayCell = document.querySelector(`.day[data-date="${date}"]`);
+                if (dayCell) {
+                    const eventTitle = document.querySelector('#event-title');
+                    const eventDesc = document.querySelector('#event-desc');
+                    eventTitle.textContent = `Events for ${date}`;
+                    eventDesc.textContent = 'Example event description';
+                    document.querySelector('.event').style.display = 'block';
+                } else {
+                    alert('Selected date is not in the current month');
+                }
+            }
+});
+    </script>
+</body>
+</html>
